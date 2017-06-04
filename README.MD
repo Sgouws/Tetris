@@ -1,7 +1,7 @@
 # Classis Tetris built with Javascript
 
 ### Controls: 
-*`down`, `left`, `right`. `q` and `w` to rotate.
+`down`, `left`, `right`. `q` and `w` to rotate.
 
 ### Todo 
 1. Difficulty Progression.
