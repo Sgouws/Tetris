@@ -10,15 +10,26 @@
 
 <body>
 	<div class="menu">
-		<div class="scores">
+		<div class="scorer">
 			Score
 			<div id="score"></div>
 		</div>
-		<div class="lines">
+		<div class="scorer">
 			Lines
 			<div id="line"></div>
 		</div>
-		<div class="controls"></div>
+	</div>
+
+	<div class="control-section">
+		<div class="controls">
+			<ul>
+				<li><span class="colorize">Right:</span> Right Arrow</li>
+				<li><span class="colorize">Left:</span> Left Arrow</li>
+				<li><span class="colorize">Drop:</span> Down Arrow</li>
+				<li><span class="colorize">Rotate Left:</span> Q </li>
+				<li><span class="colorize">Rotate Right:</span> W</li>
+			</ul>
+		</div>
 	</div>
 	<canvas id="tetris" width="240" height="400"></canvas>
 	<script src="js/tetris.js"></script>
