@@ -17,6 +17,8 @@ function arenaSweep() {
 
 		player.score += rowCount * 10;
 		rowCount *= 2;
+
+		player.lines++;
 	}
 }
 
@@ -91,7 +93,6 @@ function createPiece(type) {
 function draw() {
 	context.fillStyle = "#000";
 	context.fillRect(0, 0, canvas.width, canvas.height);
-
 	drawMatrix(arena, {
 		x: 0,
 		y: 0
@@ -130,6 +131,7 @@ function playerDrop() {
 		playerReset();
 		arenaSweep();
 		updateScore();
+		updateLines();
 	}
 	dropCounter = 0;
 }
@@ -150,7 +152,9 @@ function playerReset() {
 	if (collide(arena, player)) {
 		arena.forEach(row => row.fill(0));
 		player.score = 0;
+		player.lines = 0;
 		updateScore();
+		updateLines();
 	}
 }
 
@@ -212,6 +216,10 @@ function updateScore() {
 	document.getElementById('score').innerText = player.score;
 }
 
+function updateLines() {
+	document.getElementById('line').innerText = player.lines;
+}
+
 const colors = [
 	null,
 	'#FF0D72',
@@ -232,6 +240,7 @@ const player = {
 	},
 	matrix: null,
 	score: 0,
+	lines: 0,
 }
 
 document.addEventListener('keydown', event => {
@@ -250,4 +259,5 @@ document.addEventListener('keydown', event => {
 
 playerReset();
 updateScore();
+updateLines();
 update();
