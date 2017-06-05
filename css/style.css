@@ -14,8 +14,6 @@ canvas {
 
 .menu {
 	position: absolute;
-	top: 120px;
-	left: 60%;
 }
 
 .scorer {
@@ -24,30 +22,4 @@ canvas {
 	border-radius: 5px;
 	padding: 10px;
 	width: 100px;
-}
-
-.control-section {
-	left: 28.5%;
-	top: 120px;
-	line-height: 40px;
-	position: absolute;
-	margin-bottom: 20px;
-	border: 1px solid #FFF;
-	border-radius: 5px;
-	width: 190px;
-}
-
-.controls {
-	font-size: 14px;
-}
-
-.control-section ul {
-	text-decoration: none;
-	list-style: none;
-	text-align: left;
-}
-
-.colorize {
-	text-transform: uppercase;
-	color: dimgray;
 }
