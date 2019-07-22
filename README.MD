@@ -1,4 +1,4 @@
-<div align="center"><h1>Classis Tetris built with Javascript</h1></div>
+<div align="center"><h1>Tetris built with Javascript</h1></div>
 <div align="center"><img src="http://i.imgur.com/hQDUUv9.jpg"></div>
 
 ### Controls: 
